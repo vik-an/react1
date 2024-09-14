@@ -10,17 +10,3 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
-.App-logo {
-  height: 25px;
-  padding: 10px 5px;
-  display: flex;
-  margin-left: 20px;
-}
-.App-logo:hover {
-  text-shadow: 0px 6px 3px rosybrown;
-  animation: App-logo-spin infinite 20s linear;
-}
-a {
-  margin: 15px;
-}
