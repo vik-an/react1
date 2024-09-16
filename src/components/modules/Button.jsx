@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "./Button.module.css";
 import classNames from "classnames";
+import React from "react";
 
 const Button = ({ className, rounded, ...props }) => {
   return (

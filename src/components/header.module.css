@@ -1,40 +1,38 @@
-.App-logo {
+.appLogo {
   height: 25px;
   padding: 10px 5px;
   display: flex;
   margin-left: 20px;
 }
-.App-logo:hover {
-  text-shadow: 0px 6px 3px rosybrown;
+.apLlogo:hover {
   animation: App-logo-spin infinite 20s linear;
 }
-a {
-  margin: 15px;
-}
+
 .App-header {
-  background-color: #b2c2e6;
+  background-color: #fdfeff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   padding: 2rem 4rem;
   border-bottom: 2px solid red;
-  border: 1px solid black;
+  border: 1px solid rgb(212, 205, 205);
 }
 
-.App-link {
-  color: #61dafb;
-  font-weight: 300;
-  font-size: 1.2 rem;
+.link {
+  color: #052d36;
+  font-weight: 500;
+  font-size: 15px;
+  border: red;
 }
 
 .leftSide {
   display: flex;
   align-items: center;
-  gap: 1.2 rem;
+  gap: 30px;
 }
 
 .navigation {
   display: flex;
-  gap: 1.5 rem;
+  gap: 15px;
 }

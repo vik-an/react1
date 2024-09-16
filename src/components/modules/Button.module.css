@@ -1,18 +1,21 @@
 .button {
-  padding: 1rem;
-  background-color: rgb(78, 184, 226);
-  color: black;
+  padding: 9px;
+  background-color: rgb(87, 55, 228);
+  color: rgb(243, 238, 238);
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
+  font-size: 1cap;
+  cursor: auto;
+}
+.button:hover {
+  background-color: rgb(22, 22, 110);
 }
 
 .rounded {
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }

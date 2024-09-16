@@ -1,6 +1,7 @@
 import styles from "./header.module.css";
 import Button from "./modules/Button.jsx";
 import logo from "./pictures/logoipsum-261.svg";
+import React from "react";
 
 export const TopBar = () => {
   const links = [
@@ -21,16 +22,17 @@ export const TopBar = () => {
 
   return (
     <div className={styles["App-header"]}>
-      <img src={logo} alt="logo" className={styles.leftSide} />
+      <div className={styles.leftSide}>
+        <img src={logo} alt="logo" className={styles.appLogo} />
 
-      <nav className={styles.navigation}>
-        {links.map((link) => (
-          <a key={link.label} href={link.href} className={styles.link}>
-            {link.label}
-          </a>
-        ))}
-      </nav>
-
+        <nav className={styles.navigation}>
+          {links.map((link) => (
+            <a key={link.label} href={link.href} className={styles.link}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      </div>
       <Button>Login/Sign Up</Button>
     </div>
   );
