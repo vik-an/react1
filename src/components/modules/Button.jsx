@@ -6,6 +6,7 @@ import React from "react";
 const Button = ({ className, rounded, ...props }) => {
   return (
     <button
+      onClick={() => alert("Not today")}
       className={classNames(
         styles.button,
         rounded && styles.rounded,

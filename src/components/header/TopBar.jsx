@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-import Button from "./modules/Button.jsx";
+import Button from "../modules/Button.jsx";
 import logo from "./pictures/logoipsum-261.svg";
 import React from "react";
 
@@ -17,7 +17,6 @@ export const TopBar = () => {
       href: "#",
       label: "About us",
     },
-    { href: "#", label: "Purpurinis vakaras" },
   ];
 
   return (

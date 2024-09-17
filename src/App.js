@@ -1,6 +1,6 @@
 import "./App.css";
-import { TopBar } from "./components/TopBar.jsx";
-import { MainPage } from "./components/generalInfo.jsx";
+import { TopBar } from "./components/header/TopBar.jsx";
+import { MainPage } from "./components/home/generalInfo.jsx";
 import React from "react";
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
 
       <div>
         <MainPage />
-        <h1>puritonas</h1>
       </div>
     </div>
   );

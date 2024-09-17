@@ -4,7 +4,7 @@
   display: flex;
   margin-left: 20px;
 }
-.apLlogo:hover {
+.appLogo:hover {
   animation: App-logo-spin infinite 20s linear;
 }
 
