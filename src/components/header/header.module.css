@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   border-bottom: 2px solid red;
   border: 1px solid rgb(212, 205, 205);
 }
@@ -35,4 +35,26 @@
 .navigation {
   display: flex;
   gap: 15px;
+}
+@media screen and (max-width: 600px) {
+  .App-header {
+    display: flex;
+
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .leftSide {
+    display: block;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .appLogo {
+    height: 20px;
+    padding: 10px 2px;
+    margin-left: 0px;
+  }
+  .link {
+    font-size: 12px;
+  }
 }

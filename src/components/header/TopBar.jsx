@@ -3,36 +3,43 @@ import Button from "../modules/Button.jsx";
 import logo from "./pictures/logoipsum-261.svg";
 import React from "react";
 
+import { useNavigate, Link } from "react-router-dom;";
+import { ROUTES } from "../../routes/consts";
+
 export const TopBar = () => {
+  const navigate = useNavigate();
   const links = [
     {
-      href: "#",
+      href: ROUTES.HOME,
       label: "Home",
     },
     {
-      href: "#",
+      href: ROUTES.SERVICES,
       label: "Services",
     },
     {
-      href: "#",
+      href: ROUTES.ABOUT_US,
       label: "About us",
     },
   ];
 
   return (
-    <div className={styles["App-header"]}>
+    <header className={styles["App-header"]}>
       <div className={styles.leftSide}>
-        <img src={logo} alt="logo" className={styles.appLogo} />
-
+        <link to={ROUTES.HOME}>
+          <img src={logo} alt="logo" className={styles.appLogo} />
+        </link>
         <nav className={styles.navigation}>
           {links.map((link) => (
-            <a key={link.label} href={link.href} className={styles.link}>
+            <link key={link.label} to={link.href} className={styles.link}>
               {link.label}
-            </a>
+            </link>
           ))}
         </nav>
       </div>
-      <Button>Login/Sign Up</Button>
-    </div>
+      <Button onClick={() => navigate(ROUTES.LOGIN)} smallScreen>
+        Login/Sign Up
+      </Button>
+    </header>
   );
 };

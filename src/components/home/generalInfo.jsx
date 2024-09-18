@@ -10,8 +10,9 @@ export const MainPage = () => {
     <div className={styles.main}>
       <h1>
         Find Home <span className={styles.purple}>Service/Repair</span>
+        <br />
+        Near You
       </h1>
-      <h1>Near You</h1>
       <p className={styles.small}>
         Explore Best Home Service & Repair near you
       </p>
