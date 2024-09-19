@@ -35,12 +35,9 @@ input {
   gap: 1rem;
 }
 
-.container {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  color: blueviolet;
-  background-color: aquamarine;
+@media screen and (min-width: 900px) {
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }

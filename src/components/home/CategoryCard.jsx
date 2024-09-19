@@ -1,14 +1,17 @@
 import React from "react";
 import styles from "./CategoryList.module.css";
+import UrlIcon from "../common/UrlIcon";
 
 const CategoryCard = ({ category }) => {
-  const { name, icon } = category;
-  const Icon = icon;
+  const { name } = category;
 
   return (
     <div className={styles.card}>
-      <Icon fontSize={40} color={category.color} />
-      <p>{name}</p>
+      <UrlIcon
+        url={category.url}
+        style={{ width: 48, height: 48, backgroundColor: category.color }}
+      />
+      <p className={styles.name}>{name}</p>
     </div>
   );
 };
