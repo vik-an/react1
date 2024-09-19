@@ -4,8 +4,12 @@ import { CiSearch } from "react-icons/ci";
 import React from "react";
 import Input from "../modules/input.jsx";
 import CategoryList from "./CategoryList.jsx";
+import { ROUTES } from "../../routes/consts";
+import { useNavigate } from "react-router-dom";
 
 export const MainPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.main}>
       <h1>
@@ -18,7 +22,7 @@ export const MainPage = () => {
       </p>
       <div className={styles.inputSection}>
         <Input />
-        <Button rounded>
+        <Button rounded onClick={() => navigate(ROUTES.SEARCH_CATEGORY)}>
           <div>
             <CiSearch fontSize={20} />
           </div>

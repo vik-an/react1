@@ -3,5 +3,5 @@ export const ROUTES = {
   SERVICES: "/services",
   ABOUT_US: "/about-us",
   LOGIN: "/login",
-  SEARCH_CATEGORY: "/search/:category",
+  SEARCH_CATEGORY: "/searchCategory:category",
 };

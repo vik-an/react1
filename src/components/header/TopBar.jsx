@@ -3,7 +3,7 @@ import Button from "../modules/Button.jsx";
 import logo from "./pictures/logoipsum-261.svg";
 import React from "react";
 
-import { useNavigate, Link } from "react-router-dom;";
+import { useNavigate, Link } from "react-router-dom";
 import { ROUTES } from "../../routes/consts";
 
 export const TopBar = () => {
@@ -26,14 +26,14 @@ export const TopBar = () => {
   return (
     <header className={styles["App-header"]}>
       <div className={styles.leftSide}>
-        <link to={ROUTES.HOME}>
+        <Link to={ROUTES.HOME}>
           <img src={logo} alt="logo" className={styles.appLogo} />
-        </link>
+        </Link>
         <nav className={styles.navigation}>
           {links.map((link) => (
-            <link key={link.label} to={link.href} className={styles.link}>
+            <Link key={link.label} to={link.href} className={styles.link}>
               {link.label}
-            </link>
+            </Link>
           ))}
         </nav>
       </div>
