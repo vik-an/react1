@@ -1,4 +1,4 @@
-import styles from "./input.module.css";
+import styles from "./input.module.scss";
 import React from "react";
 
 //function TextInput() {
@@ -7,7 +7,7 @@ import React from "react";
 // };
 //}
 
-const input = () => {
+const input = ({ placeholder }) => {
   return (
     <div>
       <input
@@ -15,8 +15,8 @@ const input = () => {
         //  value={value}
         // onChange={handleChange}
         className={styles.input}
-        placeholder="serdziukas"
-      ></input>
+        placeholder={placeholder}
+      />
     </div>
   );
 };

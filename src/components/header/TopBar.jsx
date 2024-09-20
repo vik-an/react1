@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 import Button from "../modules/Button.jsx";
 import logo from "./pictures/logoipsum-261.svg";
 import React from "react";
@@ -39,6 +39,9 @@ export const TopBar = () => {
       </div>
       <Button onClick={() => navigate(ROUTES.LOGIN)} smallScreen>
         Login/Sign Up
+      </Button>
+      <Button onClick={() => navigate(ROUTES.REGISTER)} smallScreen>
+        Login
       </Button>
     </header>
   );

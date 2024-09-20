@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import styles from "./UrlIcon.module.css";
+import styles from "./UrlIcon.module.scss";
 
 const UrlIcon = ({ className, style = {}, url }) => {
   return (

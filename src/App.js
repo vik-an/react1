@@ -1,21 +1,18 @@
-import "./App.css";
-//import { TopBar } from "./components/header/TopBar.jsx";
-//import { MainPage } from "./components/home/generalInfo.jsx";
+import "./App.scss";
 import React from "react";
-
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ROUTES } from "./routes/consts";
+import ErrorBoundary from "./components/ErrorBoundary"; // Import ErrorBoundary
 
 import Home from "./components/pages/home";
 import AboutUs from "./components/pages/aboutUs";
 import Services from "./components/pages/services";
 import Login from "./components/pages/login";
 import SearchCategory from "./components/pages/searchCategory";
+import RegisterForm from "./components/pages/register";
 
 const router = createBrowserRouter([
   {
-    //element: <RootLayout />,
-
     children: [
       {
         path: ROUTES.HOME,
@@ -37,23 +34,19 @@ const router = createBrowserRouter([
         path: ROUTES.SEARCH_CATEGORY,
         element: <SearchCategory />,
       },
+      {
+        path: ROUTES.REGISTER,
+        element: <RegisterForm />,
+      },
     ],
   },
 ]);
 
 function App() {
   return (
-    <RouterProvider router={router} />
-
-    // <div className="App">
-    //   <header className="App-header">
-    //     <TopBar />
-    //   </header>
-
-    //   <div>
-    //     <MainPage />
-    //   </div>
-    // </div>
+    <ErrorBoundary>
+      <RouterProvider router={router} />
+    </ErrorBoundary>
   );
 }
 

@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-import styles from "./LoginForm.module.css"; // Import the CSS file for styling
+import Button from "../modules/Button";
+import Input from "../modules/input";
+import styles from "./LoginForm.module.scss";
+import { ROUTES } from "../../routes/consts";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,31 +40,30 @@ const LoginForm = () => {
 
         <div className={styles.formGroup}>
           <label htmlFor="email">Email</label>
-          <input
+          <Input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className={styles.input}
             placeholder="Enter your email"
           />
         </div>
 
         <div className={styles.formGroup}>
           <label htmlFor="password">Password</label>
-          <input
+          <Input
             type="password"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className={styles.input}
             placeholder="Enter your password"
           />
         </div>
 
-        <button type="submit" className={styles.button}>
-          Login
-        </button>
+        <Button type="submit">Login</Button>
+        <Button type="button" onClick={() => navigate(ROUTES.REGISTER)}>
+          Register
+        </Button>
       </form>
     </div>
   );

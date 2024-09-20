@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./CategoryList.module.css";
+import styles from "./CategoryList.module.scss";
 import UrlIcon from "../common/UrlIcon";
 
 const CategoryCard = ({ category }) => {

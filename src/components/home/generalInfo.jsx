@@ -1,4 +1,4 @@
-import styles from "./generalInfo.module.css";
+import styles from "./generalInfo.module.scss";
 import Button from "../modules/Button.jsx";
 import { CiSearch } from "react-icons/ci";
 import React from "react";
